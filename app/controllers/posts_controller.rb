@@ -8,6 +8,17 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.pdf {
+        pdf = FerrumPdf.render_pdf(host: "http://localhost:3000")
+        send_data pdf, disposition: :inline, filename: "example.pdf"
+      }
+      format.png {
+        screenshot = FerrumPdf.render_screenshot(host: "http://localhost:3000")
+        send_data screenshot, disposition: :inline, filename: "example.png"
+      }
+    end
   end
 
   # GET /posts/new

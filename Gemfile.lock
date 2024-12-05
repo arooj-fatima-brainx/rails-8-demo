@@ -110,6 +110,15 @@ GEM
     erubi (1.13.0)
     et-orbi (1.2.11)
       tzinfo
+    ferrum (0.16)
+      addressable (~> 2.5)
+      base64 (~> 0.2)
+      concurrent-ruby (~> 1.1)
+      webrick (~> 1.7)
+      websocket-driver (~> 0.7)
+    ferrum_pdf (0.3.0)
+      ferrum (~> 0.15)
+      rails (>= 6.0.0)
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-aarch64-linux-musl)
     ffi (1.17.0-arm-linux-gnu)
@@ -354,6 +363,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webrick (1.9.1)
     websocket (1.2.11)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
@@ -384,6 +394,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  ferrum_pdf (~> 0.3.0)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder

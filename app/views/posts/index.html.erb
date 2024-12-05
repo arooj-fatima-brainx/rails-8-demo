@@ -9,6 +9,8 @@
     <%= render post %>
     <p>
       <%= link_to "Show this post", post %>
+      <%= link_to "Show PDF", post_url(post, format: :pdf) %>
+      <%= link_to "Show PNG", post_url(post, format: :png) %>
     </p>
   <% end %>
 </div>
