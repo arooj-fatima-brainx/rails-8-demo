@@ -14,4 +14,11 @@
     <%= time_tag post.updated_at, "data-local": "time", "data-format": "%B %e, %Y %l:%M%P" %>
   </p>
 
+  <% if post.image.attached? %>
+    <p>
+      <strong>Uploaded image</strong>
+      <%= image_tag url_for(post.image), width: 100, height: 100 %>
+    </p>
+  <% end %>
+
 </div>
