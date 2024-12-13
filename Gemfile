@@ -63,3 +63,4 @@ group :test do
 end
 
 gem "ferrum_pdf", "~> 0.3.0"
+gem 'active_record_doctor'
