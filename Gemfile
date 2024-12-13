@@ -64,3 +64,5 @@ end
 
 gem "ferrum_pdf", "~> 0.3.0"
 gem 'active_record_doctor'
+
+gem 'active_hash', '~> 2.3.0'
